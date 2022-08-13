@@ -1,0 +1,69 @@
+.hero__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    padding: 10px 32px;
+    border: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    background-color: $logo-blue;
+    color: $text-white;
+    box-shadow: $hero-button-shadow;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: inherit;
+
+    transition: background-color $timing-function;
+
+&:hover {
+    background-color: $background-button-active;
+    }
+
+&:focus {
+    background-color: $background-button-active;
+}
+}
+
+.filter-list__button {
+    padding: 6px 22px;
+
+    background-color: $background-grey;
+    color: $text-black;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    font-family: inherit;
+    letter-spacing: inherit;
+    border-radius: 4px;
+
+    transition: color $timing-function, background-color $timing-function, box-shadow $timing-function;
+
+&:hover {
+    background-color: $logo-blue;
+    color: $text-white;
+    box-shadow: $filter-button-shadow;
+ }
+
+&:focus {
+    background-color: $logo-blue;
+    color: $text-white;
+    box-shadow: $filter-button-shadow;
+}
+}
+
+.signup-form__button {
+    gap: 10px;
+    padding: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+}

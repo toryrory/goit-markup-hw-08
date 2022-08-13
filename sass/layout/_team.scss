@@ -1,0 +1,33 @@
+.team {
+    background-color: $background-grey;
+
+.team__item {
+    --basic-item: 4;
+
+    background-color: $text-white;
+    box-shadow: $team-item-shadow;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team__content {
+    padding-top: var(--basic-item-margin);
+    padding-bottom: var(--basic-item-margin);
+}
+
+.team__title {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: $text-black;
+    text-align: center;
+}
+
+.team__text {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+}

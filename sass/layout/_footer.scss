@@ -1,0 +1,33 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $background-dark;
+
+.footer__list {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+}
+
+.footer__item .title {
+    margin-bottom: 20px;
+    color: $text-white;
+    text-transform: uppercase;
+}
+
+.footer__item:last-child {
+    margin-left: auto;
+}
+
+.footer__item .logo {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+
+.footer .social-list__icon {
+    fill: $text-white;
+}
+}

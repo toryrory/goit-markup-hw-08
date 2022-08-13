@@ -1,0 +1,26 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: $text-grey;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $text-black;
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

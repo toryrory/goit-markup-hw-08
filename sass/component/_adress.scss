@@ -1,0 +1,35 @@
+.adress {
+    font-style: normal;
+}
+
+.adress__contacts:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.adress__contacts .link {
+    transition: color $timing-function;
+}
+.adress__street {
+    color: $text-white;
+
+
+&:hover {
+    color: $logo-blue;
+ }
+
+&:focus {
+    color: $logo-blue;
+}
+}
+.adress__communication {
+    color: $text-footer;
+
+
+&:hover {
+    color: $logo-blue;
+ }
+
+&:focus {
+    color: $logo-blue;
+}
+}

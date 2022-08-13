@@ -1,0 +1,24 @@
+.feature__list {
+    --basic-item: 4;
+
+.feature__text {
+    color: $text-grey;
+}
+
+.feature__thumb {
+    display: flex;
+    margin-bottom: var(--basic-item-margin);
+
+    height: 120px;
+    background-color: $background-grey;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature__icon {
+    width: 70px;
+    height: 70px;
+    fill: currentColor;
+}
+}
