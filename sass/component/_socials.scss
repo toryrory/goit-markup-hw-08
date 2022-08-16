@@ -19,13 +19,10 @@
 
     transition: background-color $timing-function;
 
-&:hover {
-    background-color: $logo-blue;
- }
-
+&:hover,
 &:focus {
     background-color: $logo-blue;
-}
+ }
 
 .social-list__icon {
     width: 20px;
@@ -35,10 +32,7 @@
     transition: fill $timing-function;
 }
 
-&:hover .social-list__icon {
-    fill: $text-white;
-}
-
+&:hover .social-list__icon,
 &:focus .social-list__icon {
     fill: $text-white;
 }
