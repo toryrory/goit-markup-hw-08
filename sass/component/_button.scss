@@ -22,13 +22,10 @@
 
     transition: background-color $timing-function;
 
-&:hover {
-    background-color: $background-button-active;
-    }
-
+&:hover,
 &:focus {
     background-color: $background-button-active;
-}
+    }
 }
 
 .filter-list__button {
@@ -48,17 +45,12 @@
 
     transition: color $timing-function, background-color $timing-function, box-shadow $timing-function;
 
-&:hover {
-    background-color: $logo-blue;
-    color: $text-white;
-    box-shadow: $filter-button-shadow;
- }
-
+&:hover,
 &:focus {
     background-color: $logo-blue;
     color: $text-white;
     box-shadow: $filter-button-shadow;
-}
+ }
 }
 
 .signup-form__button {

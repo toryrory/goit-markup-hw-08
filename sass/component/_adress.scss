@@ -3,7 +3,7 @@
 }
 
 .adress__contacts:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .adress__contacts .link {
@@ -12,24 +12,17 @@
 .adress__street {
     color: $text-white;
 
-
-&:hover {
-    color: $logo-blue;
- }
-
+&:hover,
 &:focus {
     color: $logo-blue;
-}
+ }
 }
 .adress__communication {
     color: $text-footer;
 
 
-&:hover {
-    color: $logo-blue;
- }
-
+&:hover,
 &:focus {
     color: $logo-blue;
-}
+ }
 }

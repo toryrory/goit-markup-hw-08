@@ -3,9 +3,14 @@
     top: 50%;
     left: 50%;
     padding: 40px;
+    
+    min-width: 450px;
+    min-height: 609px;
 
+    @include mq(desk){
     min-width: 528px;
     min-height: 581px;
+    }
     border-radius: 4px;
 
     background-color: $text-white;
@@ -60,12 +65,10 @@
     cursor: pointer;
 
 
-&:hover .modal__icon {
-    fill: $logo-blue;
- }
+&:hover .modal__icon,
 &:focus .modal__icon {
     fill: $logo-blue;
-}
+ }
 }
 .modal__group {
     margin-bottom: 20px;
@@ -102,21 +105,15 @@
     transition: border $timing-function;
 
 
-&:hover {
-    border-color: $logo-blue;
-}
-
+&:hover,
 &:focus {
     border-color: $logo-blue;
 }
 
-&:hover~.modal__icon {
-    fill: $logo-blue;
- }
-
+&:hover~.modal__icon,
 &:focus~.modal__icon {
     fill: $logo-blue;
-}
+ }
 }
 
 .modal__textarea {
@@ -130,10 +127,7 @@
 
     transition: border $timing-function;
 
-&:hover {
-    border-color: $logo-blue;
-}
-
+&:hover,
 &:focus {
     border-color: $logo-blue;
 }
@@ -155,7 +149,9 @@
 
     margin-bottom: 30px;
     gap: 7px;
-
+    @include mq(noDesk) {
+        font-size: 12px;
+    }
 
 &-link {
     color: $logo-blue;
@@ -193,11 +189,9 @@
     border-radius: 2px;
 }
 
-&-checkbox:hover+&-icon &-icon--uncheck {
-    fill: $logo-blue;
- }
+&-checkbox:hover+&-icon &-icon--uncheck,
 &-checkbox:focus+&-icon &-icon--uncheck {
     fill: $logo-blue;
-}
+ }
 }
 }

@@ -23,8 +23,7 @@
       <div class="container header-container">
         <nav class="nav">
           <a class="logo link" href="/index.html" lang="en"
-            >Web<span class="logo--logo-dark">Studio</span></a
-          >
+            >Web<span class="logo--logo-dark">Studio</span></a>
           <ul class="list site-nav">
             <li class="site-nav__item">
               <a
@@ -51,6 +50,52 @@
               >
             </li>
           </ul>
+          
+          <button type="button" class="mob-menu__button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="mob-menu__icon" href="./images/icons.svg#nav-menu"></use>
+              <use class="mob-menu__cross" href="./images/icons.svg#nav-menu-close"></use>
+            </svg>
+          </button>
+          <div class="mob-menu">
+          <div class="mob-menu__container" id="menu-container" data-menu>
+            <ul class="list mob-menu__nav-list">
+              <li class="mob-menu__nav-item">Студия</li>
+              <li class="mob-menu__nav-item">Портфолио</li>
+              <li class="mob-menu__nav-item">Контакты</li>
+            </ul>
+            <ul class="list mob-menu__contact">
+              <li class="mob-menu__contact-item"></li>
+              <li class="mob-menu__contact-item"></li>
+            </ul>
+            <ul class="list mob-menu__social">
+              <li class="mob-menu__social-item">
+                <a href="" 
+                class="mob-menu__social-link link" 
+                target="_blank"
+                rel="noopener nofollow noreferrer">instagram</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a href="" 
+                class="mob-menu__social-link link" 
+                target="_blank"
+                rel="noopener nofollow noreferrer"></a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a href="" 
+                class="mob-menu__social-link link" 
+                target="_blank"
+                rel="noopener nofollow noreferrer"></a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a href="" 
+                class="mob-menu__social-link link" 
+                target="_blank"
+                rel="noopener nofollow noreferrer"></a>
+              </li>
+            </ul>
+          </div>
+          </div>
         </nav>
         <ul class="list auth-nav">
           <li class="auth-nav__item">
@@ -60,7 +105,7 @@
               >info@devstudio.com</a
             >
           </li>
-          <li class="item">
+          <li class="auth-nav__item">
             <a class="link auth-nav__contacts" href="tel:+380961111111">
               <svg class="auth-nav__icon-tel">
                 <use href="./images/icons.svg#smartphone"></use></svg
@@ -688,5 +733,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

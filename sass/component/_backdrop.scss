@@ -8,4 +8,5 @@
     background-color: $backdrop-color;
 
     transition: opacity $timing-function, visibility $timing-function;
+    /*overflow-y: scroll;*/
 }

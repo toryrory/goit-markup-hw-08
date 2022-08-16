@@ -1,6 +1,14 @@
 .filter-list {
     display: flex;
-    gap: 8px;
-    justify-content: center;
-    margin-bottom: 50px;
+    gap: 15px 8px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    @include mq(tab) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @include mq(desk) {
+        margin-bottom: 50px;
+    }
 }

@@ -1,5 +1,18 @@
+.client .section__title {
+    @include mq(noDesk){
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+}
+
 .client__list {
-    --basic-item: 6;
+    --basic-item: 2;
+    @include mq(tab) {
+        --basic-item: 3;
+    }
+    @include mq(desk) {
+        --basic-item: 6;
+    }
 }
 
 .client__link {
@@ -14,10 +27,7 @@
 
     transition: border $timing-function;
 
-&:hover {
-        border: 1px solid $logo-blue;
-    }
-
+&:hover,
 &:focus {
         border: 1px solid $logo-blue;
     }
@@ -29,10 +39,7 @@
     fill: $icons-colour;
     transition: fill $timing-function;
 
-.client__link:hover & {
-    fill: $logo-blue;
-}
-
+.client__link:hover &,
 .client__link:focus & {
     fill: $logo-blue;
 }

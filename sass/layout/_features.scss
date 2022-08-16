@@ -1,6 +1,16 @@
 .feature__list {
-    --basic-item: 1;
+    @include mq(tab) {
+            --basic-item: 2;
+        }
+    @include mq(desk) {
+            --basic-item: 4;
+        }
 
+.feature__title {
+    @include mq(mob-only) {
+        text-align: center;
+    }
+}
 .feature__text {
     color: $text-grey;
 }

@@ -1,14 +1,21 @@
+.portfolio__item {
+    @include mq(tab) {
+    --basic-item: 2;
+    }
+    @include mq(desk) {
+        --basic-item: 3;
+    }
+}
+
 .portfolio__link {
     display: inline-block;
 
     transition: box-shadow $timing-function;
 
-&:hover {
-    box-shadow: $portfolio-item-shadow;
- }
+&:hover,
 &:focus {
     box-shadow: $portfolio-item-shadow;
-}
+ }
 
 .portfolio__thumb {
     position: relative;
@@ -18,7 +25,13 @@
 .portfolio__overlay {
     position: absolute;
 
-    padding: 63px 24px;
+    padding: 77px 24px;
+    @include mq(tab) {
+        padding: 49px 24px 77px ;
+        }
+    @include mq(desk) {
+        padding: 63px 24px;
+    }
     bottom: 0;
     width: 100%;
     height: 100%;
@@ -33,15 +46,11 @@
     transition: opacity $timing-function, transform $timing-function;
 }
 
-&:hover .portfolio__overlay {
-    transform: translateY(0);
-    opacity: 1;
- }
-
+&:hover .portfolio__overlay,
 &:focus .portfolio__overlay {
     transform: translateY(0);
     opacity: 1;
-}
+ }
 
 .portfolio__card-content {
     padding: 20px 24px;

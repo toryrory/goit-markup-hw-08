@@ -1,13 +1,27 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-
     background-color: $background-dark;
+    @include mq(noDesk) {
+        text-align: center;
+    }
 
 .footer__list {
     display: flex;
-    gap: 70px;
-    align-items: baseline;
+    gap: 60px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    @include mq(tab){
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    @include mq(desk) {
+        gap: 70px;
+       
+    }
 }
 
 .footer__item .title {
@@ -17,7 +31,9 @@
 }
 
 .footer__item:last-child {
+    @include mq(desk) {
     margin-left: auto;
+    }
 }
 
 .footer__item .logo {
@@ -25,9 +41,14 @@
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.17;
+    @include mq(desk) {
+        font-size: 26px;
+    }
 }
 
-.footer .social-list__icon {
+.social-list__link .social-list__icon {
     fill: $text-white;
 }
 }

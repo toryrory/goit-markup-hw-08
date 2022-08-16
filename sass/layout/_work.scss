@@ -1,10 +1,13 @@
 .work {
+    @include mq(noDesk) {
+        display: none;
+    }
     padding-top: 0;
-
 }
 
 .work__list .card-set__item {
     position: relative;
+    --basic-item: 3;
 }
 
 .work__overlay {

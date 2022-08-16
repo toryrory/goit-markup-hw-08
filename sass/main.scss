@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './utils/reset';
+@import './utils/mixin';
 @import './base/common';
 @import './base/section';
 @import './base/container';
@@ -12,6 +13,7 @@
 @import './component/logo';
 @import './component/socials';
 @import './component/signup';
+@import './component/menu';
 @import './layout/work';
 @import './layout/header';
 @import './layout/hero';
