@@ -2,25 +2,38 @@
     padding: 118px 0;
     margin-left: auto;
     margin-right: auto;
-
-    background-color: $background-dark;
+    
     text-align: center;
-
-    background-image: $background-transparent, url("../images/images-hw-4/background-people.jpg");
+    background-color: $background-dark;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-/* desk
+    background-image: $background-transparent, url("../../images/hero/hero-480.jpg");
+
+    @include mq(retina) {
+    background-image: $background-transparent, url("../../images/hero/hero-960.jpg");
+    }
+    @include mq (tab)  {
+    background-image: $background-transparent, url("../../images/hero/hero-768.jpg");
+    @include mq(retina) {
+    background-image: $background-transparent, url("../../images/hero/hero-1536.jpg");
+    }}
+    @include mq(desk) {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;*/
+    max-width: 1600px;
+    background-image: $background-transparent, url("../../images/hero/hero-1600.jpg");
+    @include mq(retina) {
+    background-image: $background-transparent, url("../../images/hero/hero-3200.jpg");
+        }
+    }
 }
 .hero__title {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    width: 360px; 
+    max-width: 360px; 
 
     font-weight: 900;
     font-size: 26px;
@@ -29,7 +42,7 @@
     text-transform: uppercase;
     color: $text-white;
     @include mq(desk){
-        width: 696px;
+        min-width: 696px;
         font-size: 44px;
         line-height: 1.36;
     }

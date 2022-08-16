@@ -13,7 +13,17 @@
     margin-left: auto;
     fill: $text-black;
     transition: $timing-function;
-    z-index: 1;
+    z-index: 2;
+    
+    &.is-open {
+        position: fixed;
+        top: 10px;
+        right: 15px;
+    }
+    &:hover,
+    &:focus {
+        fill: $logo-blue
+    }
 }
 
 .mob-menu__cross {
@@ -31,20 +41,25 @@
 }
 
 .mob-menu__container {
-    display: none;
     @include mq(mob-only) {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     }
-        
+    @include mq(tab) {
+        display: none;
+    }
+    display: flex;
+    flex-direction: column;
     padding: 48px 40px;
     background-color: $text-white;
-    
+    z-index: 1;
+    overflow: hidden;
     transition: $timing-function;
+    transform: translateX(-200%);
+    
    
-
     &.is-open {
         @include mq(tab-only) {
             display: none;
@@ -55,6 +70,55 @@
         left: 0;
         width: 100%;
         height: 100%;
-        
+
+        transform: translateX(0);
+        overflow-y: scroll;
+    }
+}
+
+.mob-menu__nav-item {
+    font-size: 40px;
+    line-height: 1.17;
+    color: $text-black;
+}
+
+.mob-menu__nav-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+.mob-menu__contact-item {
+    font-size: 24px;
+    line-height: 1.17;
+    color: $text-grey;
+}
+.mob-menu__contact-item:not(:last-child) {
+    margin-top: 302px;
+    margin-bottom: 32px;
+    font-size: 34px;
+    
+}
+.mob-menu__social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 63px;
+}
+.mob-menu__social-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    line-height: 1.22;
+    color: $logo-blue;
+}
+.mob-menu__social-item:not(:last-child) {
+    border-right: $modal-input-border;
+}
+
+.mob-menu__social-item:first-child {
+    padding-left: 0;
+}
+
+.mob-menu__link {
+    &:hover,
+    &:focus {
+        color: $logo-blue;
     }
 }

@@ -1,7 +1,14 @@
 .logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include mq (tab) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    @include mq (desk) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
@@ -12,9 +19,16 @@
 
 
 &--logo-dark {
-    padding-top: 24px;
-    padding-bottom: 25px;
-
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include mq (tab) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    @include mq (desk) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
     color: $logo-black;
 }
 

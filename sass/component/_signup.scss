@@ -10,8 +10,14 @@
 
 &__input {
     padding: 15px 0 15px 16px;
-    width: 450px;
     height: 50px;
+    width: 100%;
+    @include mq(mob) {
+        width: 450px;
+    }
+    @include mq(tab) {
+        width: 450px;
+    }
     @include mq(desk) {
         width: 358px;
     }

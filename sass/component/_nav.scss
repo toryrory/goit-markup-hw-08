@@ -1,6 +1,5 @@
 .nav {
     display: flex;
-    text-align: center;
     
     @include mq(tab-only) {
         gap: 88px;
