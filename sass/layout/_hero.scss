@@ -9,24 +9,24 @@
     background-position: center;
     background-size: cover;
 
-    background-image: $background-transparent, url(../images/hero/hero-480.jpg);
+    background-image: $background-transparent, url(../images/w/hero/hero-480.jpg);
 
     @include mq(retina) {
-    background-image: $background-transparent, url(../images/hero/hero-960.jpg);
+    background-image: $background-transparent, url(../images/w/hero/hero-960.jpg);
     }
     @include mq (tab)  {
-    background-image: $background-transparent, url(../images/hero/hero-768.jpg);
+    background-image: $background-transparent, url(../images/w/hero/hero-768.jpg);
     @include mq(retina) {
-    background-image: $background-transparent, url(../images/hero/hero-1536.jpg);
+    background-image: $background-transparent, url(../images/w/hero/hero-1536.jpg);
     }
 }
     @include mq(desk) {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    background-image: $background-transparent, url(../images/hero/hero-1600.jpg);
+    background-image: $background-transparent, url(../images/w/hero/hero-1600.jpg);
     @include mq(retina) {
-    background-image: $background-transparent, url(../images/hero/hero-3200.jpg);
+    background-image: $background-transparent, url(../images/w/hero/hero-3200.jpg);
         }
     }
 }

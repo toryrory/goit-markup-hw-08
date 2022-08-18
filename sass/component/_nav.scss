@@ -65,13 +65,12 @@
         flex-direction: column;
         
     }
-    
 
 .auth-nav__item:not(:last-child) {
     margin-right: var(--basic-item-margin);
     @include mq(tab-only) {
         margin-right: 0;
-        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
 }
 

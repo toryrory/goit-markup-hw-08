@@ -1,14 +1,7 @@
 .logo {
     padding-top: 16px;
     padding-bottom: 16px;
-    @include mq (tab) {
-        padding-top: 26px;
-        padding-bottom: 26px;
-    }
-    @include mq (desk) {
-        padding-top: 24px;
-        padding-bottom: 25px;
-    }
+    
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
@@ -16,7 +9,16 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: $logo-blue;
-
+    @include mq (tab) {
+        font-size: 24px;
+        line-height: 1.16;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    @include mq (desk) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 
 &--logo-dark {
     padding-top: 16px;

@@ -8,7 +8,9 @@
 }
 
 .portfolio__link {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     transition: box-shadow $timing-function;
 
@@ -36,9 +38,10 @@
     bottom: 0;
     width: 100%;
     height: 100%;
+    overflow: auto;
 
     font-size: 18px;
-    line-height: 1.56;
+    line-height: 1.5;
     color: $text-white;
     background-color: $portfolio-overlay-color;
 
@@ -56,6 +59,7 @@
 .portfolio__card-content {
     padding: 20px 24px;
     border: 1px solid $inner-border;
+    flex-grow: 1;
 
     background-color: $text-white;
 }
