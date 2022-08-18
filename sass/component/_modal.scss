@@ -1,13 +1,13 @@
 .modal {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     padding: 40px;
     
-    min-width: 450px;
-    min-height: 609px;
-
-    @include mq(desk){
+    max-width: 450px;
+    height: auto;
+    
+    @include mq(desk) {
     min-width: 528px;
     min-height: 581px;
     }
@@ -19,6 +19,12 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform $timing-function;
     z-index: 3;
+    
+    @media screen and (min-height:320px) {
+        max-height: 100%;
+        overflow: auto;
+    }
+        
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
@@ -65,7 +71,6 @@
     border: 1px solid $close-icon-border;
     cursor: pointer;
 
-
 &:hover .modal__icon,
 &:focus .modal__icon {
     fill: $logo-blue;
@@ -104,7 +109,6 @@
     outline: none;
 
     transition: border $timing-function;
-
 
 &:hover,
 &:focus {
@@ -150,49 +154,49 @@
 
     margin-bottom: 30px;
     gap: 7px;
+
     @include mq(noDesk) {
         font-size: 12px;
     }
 
-&-link {
-    color: $logo-blue;
-}
+    .modal__agreement-link {
+        color: $logo-blue;
+    }
 
-/* Checkbox*/
-
-&-checkbox--hidden {
+    /* Checkbox*/
+    .modal__agreement-checkbox--hidden {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-
+    
     position: absolute;
-}
-
-&-icon {
-    transition: background-color $timing-function, fill $timing-function;
-}
-
-&-icon--check {
-    opacity: 0;
-}
-
-&-checkbox:checked+&-icon &-icon--uncheck {
-    opacity: 0;
-}
-
-&-checkbox:checked+&-icon &-icon--check {
-    opacity: 1;
-    fill: $text-white;
-}
-
-&-checkbox:checked+&-icon {
-    background-color: $logo-blue;
-    border-radius: 2px;
-}
-
-&-checkbox:hover+&-icon &-icon--uncheck,
-&-checkbox:focus+&-icon &-icon--uncheck {
-    fill: $logo-blue;
- }
-}
+    }
+    
+        .modal__agreement-icon {
+            transition: background-color var(--timing-function), fill var(--timing-function);
+        }
+    
+        .modal__agreement-icon--check {
+            opacity: 0;
+        }
+    
+        .modal__agreement-checkbox:checked+.modal__agreement-icon .modal__agreement-icon--uncheck {
+            opacity: 0;
+        }
+    
+        .modal__agreement-checkbox:checked+.modal__agreement-icon .modal__agreement-icon--check {
+            opacity: 1;
+            fill: $text-white;
+        }
+    
+        .modal__agreement-checkbox:checked+ .modal__agreement-icon {
+            background-color: $logo-blue;
+            border-radius: 2px;
+        }
+    
+        .modal__agreement-checkbox:hover+.modal__agreement-icon .modal__agreement-icon--uncheck,
+        .modal__agreement-checkbox:focus+.modal__agreement-icon .modal__agreement-icon--uncheck {
+            fill: $logo-blue;
+        }
+    }
 }

@@ -56,10 +56,9 @@
               <use class="mob-menu__cross" href="./images/icons.svg#nav-menu-close"></use>
             </svg>
           </button>
-          <div class="mob-menu">
           <div class="mob-menu__container" id="menu-container" data-menu>
             <ul class="list mob-menu__nav-list">
-              <li class="mob-menu__nav-item"><a href="./index.html" class="link mob-menu__link">Студия</a></li>
+              <li class="mob-menu__nav-item mob-menu__current-page"><a href="./index.html" class="link mob-menu__link">Студия</a></li>
               <li class="mob-menu__nav-item"><a href="./portfolio.html" class="link mob-menu__link">Портфолио</a></li>
               <li class="mob-menu__nav-item"><a href="" class="link mob-menu__link">Контакты</a></li>
             </ul>
@@ -93,7 +92,6 @@
                 rel="noopener nofollow noreferrer">LinkedIn</a>
               </li>
             </ul>
-          </div>
           </div>
         </nav>
         <ul class="list auth-nav">
@@ -745,28 +743,12 @@
             </label>
           </div>
           <label class="modal__agreement">
-            <input
-              class="modal__agreement-checkbox modal__agreement-checkbox--hidden"
-              type="checkbox"
-              name="user-agreement"
-              value="agreement"
-            />
+            <input class="modal__agreement-checkbox modal__agreement-checkbox--hidden" type="checkbox" name="user-agreement" value="agreement">
             <svg class="modal__agreement-icon" width="16" height="15">
-              <use
-                class="modal__agreement-icon--uncheck"
-                href="./images/icons.svg#icon-uncheck"
-              ></use>
-              <use
-                class="modal__agreement-icon--check"
-                href="./images/icons.svg#icon-check"
-              ></use>
+              <use class="modal__agreement-icon--uncheck" href="./images/icons.svg#icon-uncheck"></use>
+              <use class="modal__agreement-icon--check" href="./images/icons.svg#icon-check"></use>
             </svg>
-            <span
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="" class="modal__agreement-link"
-                >Условия договора</a
-              ></span
-            >
+            <span>Соглашаюсь с рассылкой и принимаю <a href="" class="modal__agreement-link">Условия договора</a></span>
           </label>
           <button class="hero__button" type="submit">Отправить</button>
         </form>
