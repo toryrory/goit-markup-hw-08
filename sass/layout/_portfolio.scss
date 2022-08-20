@@ -30,7 +30,7 @@
 
     padding: 77px 24px;
     @include mq(tab) {
-        padding: 49px 24px 77px ;
+        padding: 49px 24px;
         }
     @include mq(desk) {
         padding: 63px 24px;

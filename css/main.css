@@ -152,7 +152,6 @@ img {
   left: 50%;
   padding: 40px;
   max-width: 450px;
-  height: auto;
   border-radius: 4px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -323,6 +322,7 @@ img {
 }
 @media (max-width: 1199.98px) {
   .modal .modal__agreement {
+    line-height: 1.16;
     font-size: 12px;
   }
 }
@@ -336,6 +336,8 @@ img {
   position: absolute;
 }
 .modal .modal__agreement .modal__agreement-icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-transition: background-color var(--timing-function), fill var(--timing-function);
   transition: background-color var(--timing-function), fill var(--timing-function);
 }
@@ -464,6 +466,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .auth-nav .auth-nav__contacts {
+    font-size: 14px;
+    line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -1099,7 +1103,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .portfolio__link .portfolio__overlay {
-    padding: 49px 24px 77px;
+    padding: 49px 24px;
   }
 }
 @media screen and (min-width: 1200px) {
